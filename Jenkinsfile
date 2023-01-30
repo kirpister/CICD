@@ -26,6 +26,12 @@ pipeline {
         }
       }
 
+       stage("Final Final Final test") {
+        steps {
+         echo 'testing the app finally...'
+        }
+      }
+
       stage("deploy") {
         steps {
          echo 'deploying our app...'
