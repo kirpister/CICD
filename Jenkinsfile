@@ -1,4 +1,3 @@
-
 pipeline {
    agent any
 
@@ -12,6 +11,18 @@ pipeline {
       stage("test") {
         steps {
          echo 'testing our app...'
+        }
+      }
+
+      stage("another test") {
+        steps {
+         echo 'testing our app again...'
+        }
+      }
+
+      stage("Final test") {
+        steps {
+         echo 'testing the app finally...'
         }
       }
 
